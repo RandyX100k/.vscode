@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "cursodooo",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\odoo-19.0\\odoo-bin",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "-c", "${workspaceFolder}\\odoo-19.0\\o19.conf",              
+                "--dev=all",
+            ],
+           
+            "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+        }
+    ]
+}
