@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <record id="action_students" model="ir.actions.act_window">
+        <field name="name">Estudiantes</field>
+        <field name="res_model">students.info</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="action_cursos_students" model="ir.actions.act_window">
+
+        <field name="name">action_cursos_students</field>
+        <field name="res_model">cursos.estudiantes</field>
+        <field name="view_mode">list,form</field>
+
+    </record>
+
+
+    <record id="action_materias_students" model="ir.actions.act_window">
+        <field name="name">action_materias_students</field>
+        <field name="res_model">materias.students</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <menuitem id="access_menu_root_students"
+        action="action_students"
+        name="Estudiantes" />
+
+    <menuitem id="access_menu_cursos"
+        action="action_cursos_students"
+        name="Cursos"
+        parent="access_menu_root_students"
+    />
+
+    <menuitem id="access_menu_materias"
+        action="action_materias_students"
+        name="Materias"
+        parent="access_menu_root_students"
+    />
+
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <record id="view_list_students" model="ir.ui.view">
+        <field name="name">Estudiantes</field>
+        <field name="model">students.info</field>
+        <field name="arch" type="xml">
+            <list>
+
+                <!-- <field name="nombre" />
+                <field name="apellido" />
+                <field name="edad" /> -->
+                <field name="estudiante_id" />
+                <field name="curso_id" />
+                
+            </list>
+        </field>
+
+    </record>
+
+</odoo>
