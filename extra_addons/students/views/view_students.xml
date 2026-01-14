@@ -25,6 +25,13 @@
     </record>
 
 
+    <record id="action_calificaciones" model="ir.actions.act_window">
+        <field name="name">action_calificaciones</field>
+        <field name="res_model">calificaciones.estudiantes</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
     <menuitem id="access_menu_root_students"
         action="action_students"
         name="Estudiantes" />
@@ -40,5 +47,12 @@
         name="Materias"
         parent="access_menu_root_students"
     />
+
+    <menuitem id="access_calificaciones"
+        action="action_calificaciones"
+        name="Calificaciones"
+        parent="access_menu_root_students"
+    />
+
 
 </odoo>

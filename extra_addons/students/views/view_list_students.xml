@@ -13,7 +13,8 @@
                 <field name="edad" /> -->
                 <field name="estudiante_id" />
                 <field name="curso_id" />
-                
+                <field name="pais_id" />
+
             </list>
         </field>
 
