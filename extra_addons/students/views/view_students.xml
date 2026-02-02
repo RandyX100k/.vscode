@@ -34,7 +34,8 @@
 
     <menuitem id="access_menu_root_students"
         action="action_students"
-        name="Estudiantes" />
+        name="Estudiantes"
+    />
 
     <menuitem id="access_menu_cursos"
         action="action_cursos_students"

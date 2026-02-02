@@ -1,5 +1,6 @@
 id,name,model_id:id,group_id:id,perm_create,perm_read,perm_unlink,perm_write
-access.students.models,access_students_models,model_students_info,base.group_user,1,1,1,1
+access.students.models,access_students_models,model_students_info,students.students_group_access,1,1,1,1
 access.cursos.students.models,access_cursos_students_models,model_cursos_estudiantes,base.group_user,1,1,1,1
 access.materias.studentes,access_materias_students,model_materias_students,base.group_user,1,1,1,1
 access.calificaciones.studentes,access_calificaciones_students,model_calificaciones_estudiantes,base.group_user,1,1,1,1
+access_wizard_calification,access.wizard.calification,model_wizard_calification,base.group_user,1,1,1,1

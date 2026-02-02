@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <record id="wizard_view_form" model="ir.ui.view">
+        <field name="name">Reprobar</field>
+        <field name="model">wizard.calification</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="estudiante_id" readonly="1" />
+                    <field name="nota" />
+                </group>
+
+                <footer>
+                    <button type="object" name="reprobar" string="Reprobar" class="btn btn-primary" />
+                    <button special="cancel" string="Cancelar" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

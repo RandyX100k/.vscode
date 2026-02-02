@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <record id="students_category_security" model="ir.module.category">
+        <field name="name">Estudiantes</field>
+        <field name="description">Grupos de seguridad para estudiantes</field>
+    </record>
+
+
+    <record id="students_privilege" model="res.groups.privilege">
+        <field name="name">Estudiantes</field>
+        <field name="category_id" ref="students.students_category_security" />
+    </record>
+
+
+    <record id="students_group_access" model="res.groups">
+        <field name="name">Acceso a estudante</field>
+        <field name="privilege_id" ref="students.students_privilege" />
+    </record>
+
+</odoo>

@@ -8,6 +8,7 @@
             <form>
                 <header>
                     <field name="estado_calificacion" widget="statusbar" options="{'clickable': 1}" />
+                    <button type="object" string="Reprobar" name="reprobar" />
                 </header>
                 <sheet>
                     <group>
@@ -21,6 +22,7 @@
                             <field name="pais_id" />
                             <field name="tag_ids" widget="many2many_tags" />
                             <field name="addrees" widget="url" />
+                            <field name="edad" />
                         </group>
                     </group>
 
@@ -28,11 +30,16 @@
                     <notebook>
                         <page name="calification" string="Calificaciones">
                             <field name="calificaciones_ids">
-                                <list>
+                                <list editable="bottom">
                                     <field name="materia_id" />
                                     <field name="calificacion" />
+                                    <field name="estado_materia" />
                                 </list>
                             </field>
+                        </page>
+
+                        <page name="Nota de reprobado">
+                            <field name="note" />
                         </page>
                     </notebook>
                 </sheet>
