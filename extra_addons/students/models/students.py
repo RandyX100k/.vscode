@@ -84,6 +84,7 @@ class Students(models.Model):
     @api.onchange("edad")
     def _check_edad(self):
         for record in self:
+            if record.edad:
             
-            if record.edad <=14:
-                raise ValidationError("La edad del estudiante debe ser mayor a 14 años")
+                if record.edad <=14:
+                    raise ValidationError("La edad del estudiante debe ser mayor a 14 años")

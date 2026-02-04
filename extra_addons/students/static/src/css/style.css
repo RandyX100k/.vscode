@@ -1,0 +1,87 @@
+.students-view {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color: #333;
+}
+
+.students-view h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.students-view h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.students-view h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #1f6f8b;
+}
+
+.students-view table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.students-view thead {
+    background-color: #1f6f8b;
+    color: #fff;
+}
+
+.students-view th,
+.students-view td {
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.students-view tbody tr:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+.students-view tbody tr:hover {
+    background-color: #e8f4f8;
+}
+
+.estado-aprobado {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.estado-reprobado {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .students-view table,
+    .students-view thead,
+    .students-view tbody,
+    .students-view th,
+    .students-view td,
+    .students-view tr {
+        display: block;
+    }
+
+    .students-view thead {
+        display: none;
+    }
+
+    .students-view tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .students-view td {
+        border: none;
+        padding: 6px 0;
+    }
+}

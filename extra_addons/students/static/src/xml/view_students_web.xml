@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+
+    <t t-name="students.view_calification_student">
+
+        <div class="students-view">
+            <h1>Hola: <t t-esc="props.userName" /></h1>
+            <h2>Tienes: <t t-esc="state.edad" /> años</h2>
+
+            <!-- <button t-on-click="openAlert">Presioname</button>
+    
+            <input type="text" placeholder="nombre" t-on-input="viewInput" />
+    
+            <button t-on-click="viewNotification">Mostrar notificacion</button>
+    
+    
+            <button t-on-click="changeNumber">Cambiar numero</button>
+    
+            <h2>Numero actual: <t t-esc="state.number" />
+            </h2> -->
+
+
+            <input type="number" placeholder="edad" t-ref="input_edad" />
+            <button t-on-click="validarEdad">Validar Edad</button>
+
+            <h3>Calificaciones</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Calificacion</th>
+                        <th>Estado</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="state.calificaciones" t-as="c" t-key="c.id">
+                        <tr>
+                            <td>
+                                <t t-esc="c.materia_id[1]" />
+                            </td>
+                            <td>
+                                <t t-esc="c.calificacion" />
+                            </td>
+                            <td>
+                                <t t-esc="c.estado_materia" />
+
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+        </div>
+
+
+    </t>
+
+</templates>
